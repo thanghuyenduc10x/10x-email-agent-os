@@ -38,22 +38,22 @@ Status: BUILD PASS
 
 - [x] Canonical repository exists: `thanghuyenduc10x/10x-email-agent-os`
 - [x] Existing remote source inspected
-- [ ] Acceptance fixes committed and pushed
+- [x] Acceptance fixes committed and pushed (`6c916cf8e19338cc498f7e7db20ebcf1b4ad1e82`)
 
-Status: IN PROGRESS
+Status: PASS
 
 ## Sprint 5 — Production Publish
 
 - [x] Deployable static build created
 - [x] GitHub Pages enabled with `build_type: workflow`
-- [ ] Exact V1 build deployed
-- [ ] GitHub Actions deployment run succeeds
-- [ ] Actual production URL obtained from the Pages API
-- [ ] Production URL returns HTTP 200
-- [ ] Production CSS returns HTTP 200
-- [ ] Production page verified on desktop and mobile
+- [x] Exact V1 build deployed
+- [x] GitHub Actions deployment run succeeds (`35459166927`)
+- [x] Actual production URL obtained from the Pages API
+- [x] Production URL returns HTTP 200
+- [x] Production CSS returns HTTP 200
+- [x] Production page verified on desktop and mobile
 
-Status: DEPLOYMENT PENDING
+Status: PASS
 
 ### Post-V1 branded URL follow-up
 
@@ -80,15 +80,15 @@ Status: SIMULATED ACCEPTANCE PASS
 - [x] Canonical source exists
 - [x] Agent manifest exists
 - [x] Website renders correctly locally
-- [ ] GitHub source includes the acceptance fixes
-- [ ] GitHub Pages deploy succeeds
-- [ ] Production URL returns successfully
-- [ ] Website is usable on desktop in production
-- [ ] Website is usable on mobile in production
+- [x] GitHub source includes the acceptance fixes
+- [x] GitHub Pages deploy succeeds
+- [x] Production URL returns successfully
+- [x] Website is usable on desktop in production
+- [x] Website is usable on mobile in production
 - [x] No sensitive data found in the public website source
 - [x] Five simulated personas completed
 - [x] Acceptance report exists
 - [x] V1 DoD checklist updated
-- [ ] No unresolved critical blocker remains
+- [x] No unresolved critical blocker remains
 
-Final status: NOT ACCEPTED — production gates remain pending.
+Final status: AI EMAIL AGENT V1 — ACCEPTED

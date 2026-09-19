@@ -4,12 +4,13 @@
 
 ## Release evidence
 
-- Production URL: `https://thanghuyenduc10x.github.io/10x-email-agent-os/` (returned by the GitHub Pages API; HTTP verification pending).
-- Deployment status: Pages enabled with `build_type: workflow`; deployment run pending.
-- Git commit SHA: PENDING — local acceptance fixes are not committed yet.
-- GitHub Actions run ID: PENDING.
-- Deployment evidence: PENDING.
-- Local QA: PASS — seven required sections render, stylesheet loads, browser console has no warnings/errors, desktop viewport has no horizontal overflow, and mobile 390 × 844 viewport has no page-level horizontal overflow.
+- Production URL: `https://thanghuyenduc10x.github.io/10x-email-agent-os/`.
+- Deployment status: PASS — GitHub Pages enabled with `build_type: workflow`; Actions deployment completed successfully.
+- Deployed Git commit SHA: `6c916cf8e19338cc498f7e7db20ebcf1b4ad1e82`.
+- GitHub Actions run ID: `35459166927`.
+- Deployment evidence: all workflow steps passed, including Setup Pages, Upload website, and Deploy to GitHub Pages. Run: `https://github.com/thanghuyenduc10x/10x-email-agent-os/actions/runs/35459166927`.
+- HTTP evidence: production page returns HTTP 200 as `text/html`; production stylesheet returns HTTP 200 as `text/css`; both files match the deployed source exactly.
+- Browser QA: PASS — all seven sections render in production, stylesheet loads, desktop and mobile console logs are clean, 1280 × 720 desktop has no page-level overflow, and 390 × 844 mobile has no page-level overflow.
 
 ## Acceptance method
 
@@ -106,7 +107,7 @@ Classification convention: exactly one priority label (P0–P5) plus one content
 | Missed P0 | PASS for documented cases | Suspicious login, account compromise, and blocking payment/contract issue surface as P0. |
 | Promotions incorrectly escalated | PASS | Promotions are P5 and label-only during stabilization. |
 | Information overload | PASS | Brief/Digest cadence and P3/P4/P5 separation reduce noise. |
-| Website clarity | PASS locally | Seven named sections, navigation, priority table, roadmap, next action, and tests are visible. |
+| Website clarity | PASS in production | Seven named sections, navigation, priority table, roadmap, next action, and tests are visible. |
 | Quick Start clarity | PASS | The page names a concrete first action and preserves read-only/human-review gates. |
 | Test clarity | PASS | P0/P1/P3/P5 examples include the two critical security/verification edge cases. |
 
@@ -119,17 +120,15 @@ Classification convention: exactly one priority label (P0–P5) plus one content
 
 ## Remaining risks
 
-- Production deployment and HTTP verification remain pending until the GitHub Actions run completes.
 - The branded target `email-agent.10x-lifeos.com` is not part of the confirmed GitHub Pages deployment and remains a follow-up unless separately configured.
 - Persona tests are simulations of transfer clarity, not measurements from real users or a live classifier.
 - Real classification quality still depends on the 30-email calibration set and three-day stabilization gate.
+- The successful workflow emitted a non-blocking Node.js 20 deprecation warning for current action versions; GitHub ran them on Node.js 24.
 
 ## Final decision
 
-**AI EMAIL AGENT V1 — NOT ACCEPTED**
-
-Failed gates: GitHub Pages deployment, production URL verification, production desktop/mobile verification, GitHub commit/run evidence.
+**AI EMAIL AGENT V1 — ACCEPTED**
 
 ## Next recommended version
 
-After V1 production acceptance, V1.1 should add a reusable synthetic fixture set with expected labels and a lightweight automated HTML/accessibility/link check. V2 can then extract the website grammar into a reusable multi-agent template.
+V1.1 should add a reusable synthetic fixture set with expected labels and a lightweight automated HTML/accessibility/link check. V2 can then extract the website grammar into a reusable multi-agent template.
