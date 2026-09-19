@@ -25,16 +25,16 @@ Status: BUILD PASS
 
 ## Sprint 4 — GitHub Canonicalization
 - [x] Canonical repository exists: thanghuyenduc10x/10x-email-agent-os
-- [x] Source package prepared
-- [ ] Remote source push verified
-Status: IN PROGRESS
+- [x] Source package pushed
+- [x] Remote files verified
+Status: PASS
 
 ## Sprint 5 — Production Publish
 - [x] Deployable static build created
 - [ ] Exact V1 build deployed
 - [ ] Production URL verified
 - [ ] Target branded URL email-agent.10x-lifeos.com verified with HTTPS
-Status: PENDING
+Status: IN PROGRESS
 
 ## Sprint 6 — Transfer Acceptance
 Five representative simulated personas: Manager, HR, Customer Support, Sales, Low-email user.
@@ -45,4 +45,4 @@ Five representative simulated personas: Manager, HR, Customer Support, Sales, Lo
 Status: PENDING
 
 # Final V1 Gate
-V1 becomes ACCEPTED only after GitHub source verification + production verification + persona acceptance report.
+V1 becomes ACCEPTED only after production verification + persona acceptance report.
