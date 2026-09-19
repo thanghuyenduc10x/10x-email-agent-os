@@ -3,8 +3,8 @@ agent:
   slug: "email-agent"
   version: "1.0.0"
   command: "Public Agent Email"
-  target_url: "https://email-agent.10x-lifeos.com"
-  production_url: "https://thanghuyenduc10x.github.io/10x-email-agent-os/"
+  target_url: "https://agent-email.10x-lifeos.com"
+  production_url: "https://agent-email.10x-lifeos.com/"
 audience:
   primary: "Học viên chưa có context về hệ thống Email Agent"
 problem:
