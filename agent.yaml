@@ -1,0 +1,40 @@
+agent:
+  name: "10X Email Agent"
+  slug: "email-agent"
+  version: "1.0.0"
+  command: "Public Agent Email"
+  target_url: "https://email-agent.10x-lifeos.com"
+audience:
+  primary: "Học viên chưa có context về hệ thống Email Agent"
+problem:
+  statement: "Biến inbox lộn xộn thành một luồng ưu tiên có cảnh báo, brief và digest mà không mất kiểm soát con người."
+destination:
+  statement: "Một Email Agent V1 có thể phân loại, cảnh báo P0, tóm tắt định kỳ và hướng dẫn next action."
+system:
+  stages: ["Classify", "Alert", "Brief", "Digest", "Review", "Improve"]
+roadmap:
+  - "Labels"
+  - "Pilot 100"
+  - "Label 30"
+  - "P0 Alert"
+  - "2-hour Brief"
+  - "Daily Digest"
+  - "3-day Stabilization"
+  - "Safe Backfill"
+quick_start:
+  - "Kết nối Gmail"
+  - "Pilot read-only"
+  - "Test P0/P1/P3/P5"
+  - "Review trước khi archive"
+test_cases: ["P0 urgent", "P1 reply", "P3 awareness", "P5 promotion"]
+definition_of_done:
+  - "Problem, Destination, Roadmap rõ ràng"
+  - "Quick Start rõ ràng"
+  - "Test suite rõ ràng"
+  - "Website hoạt động"
+  - "Source có version"
+evolution:
+  v2: "Reusable Agent Template"
+  v3: "AI Generation Pipeline"
+  v4: "10X Agent Library"
+  perfection: "Knowledge-to-Impact Learning Loop"
