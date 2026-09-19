@@ -1,12 +1,133 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>10X Email Agent — Public Agent V1</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="eyebrow">10X LIFEOS · PUBLIC AGENT V1</div><h1>Email Agent</h1><p class="lead">Từ inbox lộn xộn → một hệ thống biết ưu tiên, cảnh báo và tóm tắt để bạn tập trung vào email thực sự quan trọng.</p><div class="chips"><span>V1 · Golden Case</span><span>3–5 min Quick Start</span><span>Human-in-the-loop</span></div></header>
-<main>
-<section id="problem"><b>01 · PROBLEM</b><h2>Không phải thiếu email. Là thiếu một lớp ưu tiên.</h2><p>Email quan trọng đang lẫn với newsletter, promotion và thông báo tự động. Kết quả: tốn thời gian kiểm tra, dễ bỏ sót thanh toán, bảo mật, quyền truy cập, cộng sự và deadline.</p></section>
-<section id="destination"><b>02 · DESTINATION</b><h2>Một inbox có AI đứng trước.</h2><div class="grid"><article><strong>P0</strong><p>Cảnh báo ngay khi thật sự khẩn.</p></article><article><strong>2H</strong><p>Email Brief theo nhịp làm việc.</p></article><article><strong>21:00</strong><p>Daily Digest chốt ngày.</p></article><article><strong>SAFE</strong><p>Không tự gửi/xóa trong V1.</p></article></div></section>
-<section id="system"><b>03 · SYSTEM</b><h2>Classify → Alert → Brief → Digest → Learn</h2><div class="flow"><span>Gmail</span><i>→</i><span>AI Classify P0–P5</span><i>→</i><span>Alert / Brief</span><i>→</i><span>Human Action</span><i>→</i><span>Improve</span></div></section>
-<section id="roadmap"><b>04 · ROADMAP</b><h2>8 bước để dựng V1</h2><ol><li>Tạo labels</li><li>Pilot 100 email</li><li>Gắn nhãn 30 email</li><li>Bật P0 Alert</li><li>Bật Brief mỗi 2 giờ</li><li>Bật Daily Digest</li><li>Ổn định 3 ngày</li><li>Backfill an toàn</li></ol></section>
-<section id="quick"><b>05 · QUICK START</b><h2>Bắt đầu trong 4 bước</h2><ol class="steps"><li><strong>Kết nối Gmail</strong><small>Cho ChatGPT quyền làm việc với inbox của bạn.</small></li><li><strong>Pilot read-only</strong><small>Đừng sửa inbox trước khi AI hiểu mẫu email.</small></li><li><strong>Test P0/P1/P3/P5</strong><small>Dùng email giả lập, không dùng dữ liệu nhạy cảm.</small></li><li><strong>Review rồi mới tự động hóa</strong><small>Archive promotion chỉ sau gate ổn định.</small></li></ol></section>
-<section id="test"><b>06 · TEST & DONE</b><h2>V1 chỉ Done khi bạn kiểm chứng được.</h2><div class="checks"><label><input type="checkbox"> P0 khẩn → cảnh báo ngay</label><label><input type="checkbox"> P1 cần trả lời → vào Brief, không ping P0</label><label><input type="checkbox"> P3 thông tin → ghi nhận đúng</label><label><input type="checkbox"> P5 promotion → không làm nhiễu Brief</label></div></section>
-<section id="evolution"><b>07 · EVOLUTION</b><h2>Từ một Agent → Agent Publishing OS</h2><div class="timeline"><article><strong>V1</strong><p>1 source → 1 website → 1 URL</p></article><article><strong>V2</strong><p>1 template → N Agents</p></article><article><strong>V3</strong><p>AI distill → generate → publish</p></article><article><strong>V4</strong><p>10X Agent Library</p></article><article><strong>∞</strong><p>Knowledge → Impact → Feedback → Second Brain</p></article></div></section>
-</main><footer>10X Agent Publishing OS · Golden Case: Email Agent · #10XLifeOS</footer><!-- deploy-trigger: v1-public -->
-</body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="10X Email Agent V1: mô hình an toàn để phân loại, cảnh báo và tóm tắt email mà vẫn giữ con người trong vòng kiểm soát.">
+  <title>10X Email Agent — Public Agent V1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Bỏ qua đến nội dung</a>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">10X LIFEOS · PUBLIC AGENT V1</p>
+      <h1>Email Agent</h1>
+      <p class="lead">Từ inbox lộn xộn → một hệ thống biết ưu tiên, cảnh báo và tóm tắt để bạn tập trung vào email thực sự quan trọng.</p>
+      <div class="chips" aria-label="Đặc tính V1"><span>V1 · Golden Case</span><span>3–5 phút để hiểu</span><span>Human-in-the-loop</span></div>
+      <nav aria-label="Nội dung chính">
+        <a href="#problem">Problem</a><a href="#destination">Destination</a><a href="#system">System</a><a href="#roadmap">Roadmap</a><a href="#quick">Quick Start</a><a href="#test">Test &amp; Done</a><a href="#evolution">Evolution</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="problem">
+      <p class="section-label">01 · PROBLEM</p>
+      <h2>Không phải thiếu email. Là thiếu một lớp ưu tiên.</h2>
+      <p class="intro">Email quan trọng đang lẫn với newsletter, promotion và thông báo tự động. Kết quả: tốn thời gian kiểm tra, dễ bỏ sót thanh toán, bảo mật, quyền truy cập, cộng sự và deadline.</p>
+    </section>
+
+    <section id="destination">
+      <p class="section-label">02 · DESTINATION</p>
+      <h2>Một inbox có AI đứng trước — và con người quyết định.</h2>
+      <div class="grid metrics">
+        <article><strong>P0</strong><p>Cảnh báo ngay khi thật sự khẩn.</p></article>
+        <article><strong>2H</strong><p>Email Brief theo nhịp 08:00–20:00.</p></article>
+        <article><strong>21:00</strong><p>Daily Digest chốt ngày.</p></article>
+        <article><strong>SAFE</strong><p>Không tự gửi, không xóa trong V1.</p></article>
+      </div>
+    </section>
+
+    <section id="system">
+      <p class="section-label">03 · SYSTEM</p>
+      <h2>Classify → Alert → Brief → Digest → Review → Improve</h2>
+      <div class="flow" aria-label="Luồng hệ thống"><span>Gmail</span><i aria-hidden="true">→</i><span>AI Classify</span><i aria-hidden="true">→</i><span>Alert / Brief</span><i aria-hidden="true">→</i><span>Human Action</span><i aria-hidden="true">→</i><span>Improve</span></div>
+
+      <div class="split">
+        <div>
+          <h3>Mỗi email nhận đúng 2 nhãn</h3>
+          <p><strong>1 priority label</strong> + <strong>1 content label</strong>. Nếu chưa chắc, email vẫn ở Inbox để người dùng quyết định.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Priority</th><th>Ý nghĩa</th><th>Cách xử lý</th></tr></thead>
+              <tbody>
+                <tr><td><span class="priority p0">P0</span></td><td>Cần xử lý ngay</td><td>Cảnh báo tức thời</td></tr>
+                <tr><td><span class="priority">P1</span></td><td>Cần trả lời</td><td>Đưa vào Brief</td></tr>
+                <tr><td><span class="priority">P2</span></td><td>Cần theo dõi</td><td>Nhắc follow-up</td></tr>
+                <tr><td><span class="priority">P3</span></td><td>Thông tin cần biết</td><td>Ghi nhận, không cảnh báo</td></tr>
+                <tr><td><span class="priority">P4</span></td><td>Thông báo hệ thống</td><td>Giảm nhiễu</td></tr>
+                <tr><td><span class="priority">P5</span></td><td>Không quan trọng</td><td>Label-only lúc đầu</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <aside>
+          <h3>Content labels</h3>
+          <ul class="tag-list">
+            <li>Thanh toán &amp; Hóa đơn</li><li>Cộng sự &amp; Đối tác</li><li>Google Drive &amp; Quyền truy cập</li><li>Vận hành hệ thống</li><li>Xác minh &amp; Bảo mật</li><li>Newsletter &amp; Promotion</li>
+          </ul>
+          <h3>Hai ngoại lệ phải nhớ</h3>
+          <ul>
+            <li>Cảnh báo đăng nhập đáng ngờ có thể là <strong>P0</strong> dù do hệ thống gửi.</li>
+            <li>Mã xác minh do chính bạn yêu cầu thường là <strong>P3</strong>, không phải P0.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <p class="section-label">04 · ROADMAP</p>
+      <h2>8 bước để dựng V1 mà không mất kiểm soát.</h2>
+      <ol class="roadmap">
+        <li><strong>Tạo labels</strong><span>Bộ P0–P5 và 6 nhãn nội dung.</span></li>
+        <li><strong>Pilot 100 email</strong><span>Chỉ đọc và quan sát mẫu.</span></li>
+        <li><strong>Gắn nhãn 30 email</strong><span>Hiệu chỉnh trên mẫu đại diện.</span></li>
+        <li><strong>Bật P0 Alert</strong><span>Chỉ cảnh báo rủi ro thật sự khẩn.</span></li>
+        <li><strong>Bật Brief mỗi 2 giờ</strong><span>08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00.</span></li>
+        <li><strong>Bật Daily Digest</strong><span>Chốt ngày lúc 21:00, Asia/Ho_Chi_Minh.</span></li>
+        <li><strong>Ổn định 3 ngày</strong><span>Đo false positive, false negative và missed P0.</span></li>
+        <li><strong>Backfill an toàn</strong><span>Chỉ archive promotion sau gate ổn định.</span></li>
+      </ol>
+    </section>
+
+    <section id="quick">
+      <p class="section-label">05 · QUICK START</p>
+      <h2>Bắt đầu với một pilot read-only.</h2>
+      <ol class="steps">
+        <li><strong>Kết nối nguồn email</strong><small>Chỉ cấp quyền tối thiểu cần thiết và chưa cho phép gửi/xóa.</small></li>
+        <li><strong>Tạo bộ nhãn</strong><small>Dùng đúng P0–P5 và 6 content labels ở trên.</small></li>
+        <li><strong>Chạy pilot read-only</strong><small>Quan sát 100 email gần nhất; gắn nhãn thật cho 30 email đại diện.</small></li>
+        <li><strong>Test bằng dữ liệu giả lập</strong><small>Kiểm tra P0/P1/P3/P5, đặc biệt cảnh báo bảo mật và verification code.</small></li>
+        <li><strong>Review trước automation</strong><small>Chỉ bật Alert/Brief/Digest sau khi duyệt kết quả; archive promotion sau gate 3 ngày.</small></li>
+      </ol>
+      <div class="callout">
+        <strong>Next action trong 5 phút:</strong> tạo 12 nhãn, chọn 30 email đại diện và chạy phân loại ở chế độ read-only.
+      </div>
+      <p class="source-links"><a href="https://github.com/thanghuyenduc10x/10x-email-agent-os/blob/main/knowledge/EMAIL-AGENT-CANONICAL-V1.md">Đọc canonical source</a><a href="https://github.com/thanghuyenduc10x/10x-email-agent-os/blob/main/agent.yaml">Xem agent manifest</a><a href="https://github.com/thanghuyenduc10x/10x-email-agent-os">Mở GitHub repository</a></p>
+    </section>
+
+    <section id="test">
+      <p class="section-label">06 · TEST &amp; DEFINITION OF DONE</p>
+      <h2>V1 chỉ Done khi kiểm chứng được bằng email giả lập.</h2>
+      <div class="checks">
+        <label><input type="checkbox"> <span><strong>P0 — cảnh báo đăng nhập đáng ngờ</strong><small>Cảnh báo ngay; không bị hạ xuống P4 chỉ vì là email tự động.</small></span></label>
+        <label><input type="checkbox"> <span><strong>P1 — người thật cần trả lời</strong><small>Vào Brief; không tạo cảnh báo P0 nếu không có deadline/rủi ro khẩn.</small></span></label>
+        <label><input type="checkbox"> <span><strong>P3 — mã xác minh đã yêu cầu</strong><small>Ghi nhận đúng; không tạo báo động giả.</small></span></label>
+        <label><input type="checkbox"> <span><strong>P5 — newsletter/promotion</strong><small>Không làm nhiễu Brief; chưa tự archive trong giai đoạn đầu.</small></span></label>
+      </div>
+      <div class="done-grid">
+        <article><strong>Không missed P0</strong><p>Mọi rủi ro khẩn đều nổi bật.</p></article><article><strong>Không destructive action</strong><p>Không gửi, xóa hoặc archive tự động ngoài gate.</p></article><article><strong>Người dùng hiểu next action</strong><p>Biết bắt đầu từ pilot read-only.</p></article>
+      </div>
+    </section>
+
+    <section id="evolution">
+      <p class="section-label">07 · EVOLUTION</p>
+      <h2>Từ một Agent → Agent Publishing OS.</h2>
+      <div class="timeline"><article><strong>V1</strong><p>1 source → 1 website → 1 URL</p></article><article><strong>V2</strong><p>1 template → N Agents</p></article><article><strong>V3</strong><p>AI distill → generate → publish</p></article><article><strong>V4</strong><p>10X Agent Library</p></article><article><strong>∞</strong><p>Knowledge → Impact → Feedback → Second Brain</p></article></div>
+    </section>
+  </main>
+
+  <footer>10X Agent Publishing OS · Golden Case: Email Agent · #10XLifeOS</footer>
+</body>
+</html>

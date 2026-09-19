@@ -1,6 +1,6 @@
 # 10X Agent Publishing OS V1 — Email Agent Golden Case
 
-V1 proves: Solved Problem → Canonical Source → Agent Manifest → Website → GitHub → Vercel → Production URL → Acceptance.
+V1 proves: Solved Problem → Canonical Source → Agent Manifest → Website → GitHub → GitHub Pages → Production URL → Acceptance.
 
 ## Structure
 - `AGENT-PUBLISHING-OS-V1-SPEC.md` — locked V1 spec
