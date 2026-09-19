@@ -4,13 +4,14 @@
 
 ## Release evidence
 
-- Production URL: `https://thanghuyenduc10x.github.io/10x-email-agent-os/`.
-- Deployment status: PASS — GitHub Pages enabled with `build_type: workflow`; Actions deployment completed successfully.
-- Deployed Git commit SHA: `6c916cf8e19338cc498f7e7db20ebcf1b4ad1e82`.
-- GitHub Actions run ID: `35459166927`.
-- Deployment evidence: all workflow steps passed, including Setup Pages, Upload website, and Deploy to GitHub Pages. Run: `https://github.com/thanghuyenduc10x/10x-email-agent-os/actions/runs/35459166927`.
-- HTTP evidence: production page returns HTTP 200 as `text/html`; production stylesheet returns HTTP 200 as `text/css`; both files match the deployed source exactly.
-- Browser QA: PASS — all seven sections render in production, stylesheet loads, desktop and mobile console logs are clean, 1280 × 720 desktop has no page-level overflow, and 390 × 844 mobile has no page-level overflow.
+- Production URL: `https://agent-email.10x-lifeos.com/`.
+- Deployment status: PASS — GitHub Pages enabled with `build_type: workflow`; branded-domain Actions deployment completed successfully.
+- Deployed Git commit SHA: `da765575604c6af393d75535d83e8bca028e3ddb`.
+- GitHub Actions run ID: `35460915855`.
+- Deployment evidence: all workflow steps passed, including Setup Pages, Upload website, and Deploy to GitHub Pages. Run: `https://github.com/thanghuyenduc10x/10x-email-agent-os/actions/runs/35460915855`.
+- DNS and TLS evidence: authoritative Hostinger nameservers return CNAME `thanghuyenduc10x.github.io`; GitHub approved the certificate for `agent-email.10x-lifeos.com`; HTTPS enforcement is enabled.
+- HTTP evidence: the production page, stylesheet, footer script, icon script, favicon, and Open Graph cover all return HTTP 200 over HTTPS.
+- Browser QA: PASS — the branded production page renders all seven sections, skip link, navigation, shared 10X footer, and canonical content; prior desktop and mobile overflow and console checks remain passing for this exact website source.
 
 ## Acceptance method
 
@@ -120,7 +121,6 @@ Classification convention: exactly one priority label (P0–P5) plus one content
 
 ## Remaining risks
 
-- The branded target `email-agent.10x-lifeos.com` is not part of the confirmed GitHub Pages deployment and remains a follow-up unless separately configured.
 - Persona tests are simulations of transfer clarity, not measurements from real users or a live classifier.
 - Real classification quality still depends on the 30-email calibration set and three-day stabilization gate.
 - The successful workflow emitted a non-blocking Node.js 20 deprecation warning for current action versions; GitHub ran them on Node.js 24.

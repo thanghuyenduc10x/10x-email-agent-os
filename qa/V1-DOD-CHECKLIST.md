@@ -38,7 +38,7 @@ Status: BUILD PASS
 
 - [x] Canonical repository exists: `thanghuyenduc10x/10x-email-agent-os`
 - [x] Existing remote source inspected
-- [x] Acceptance fixes committed and pushed (`6c916cf8e19338cc498f7e7db20ebcf1b4ad1e82`)
+- [x] Acceptance and branded-domain fixes committed and pushed (`da765575604c6af393d75535d83e8bca028e3ddb`)
 
 Status: PASS
 
@@ -47,19 +47,21 @@ Status: PASS
 - [x] Deployable static build created
 - [x] GitHub Pages enabled with `build_type: workflow`
 - [x] Exact V1 build deployed
-- [x] GitHub Actions deployment run succeeds (`35459166927`)
+- [x] GitHub Actions deployment run succeeds (`35460915855`)
 - [x] Actual production URL obtained from the Pages API
 - [x] Production URL returns HTTP 200
 - [x] Production CSS returns HTTP 200
+- [x] Branded CNAME resolves from both authoritative nameservers
+- [x] GitHub certificate approved and HTTPS enforcement enabled
 - [x] Production page verified on desktop and mobile
 
 Status: PASS
 
-### Post-V1 branded URL follow-up
+### Branded production URL
 
-- [ ] Target branded URL `email-agent.10x-lifeos.com` configured and verified with HTTPS
+- [x] Target branded URL `agent-email.10x-lifeos.com` configured and verified with HTTPS
 
-This custom domain is a documented target but is not one of the final acceptance gates supplied for the GitHub Pages V1 handoff.
+Verified production URL: `https://agent-email.10x-lifeos.com/`.
 
 ## Sprint 6 — Transfer Acceptance
 
