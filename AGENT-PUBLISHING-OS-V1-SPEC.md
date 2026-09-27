@@ -30,7 +30,7 @@ Website grammar bắt buộc:
 - Agent Manifest tồn tại và hợp lệ.
 - Website V1 render được trên desktop/mobile.
 - Source được version-control trên GitHub.
-- Website có URL online và mục tiêu branded URL `email-agent.10x-lifeos.com`.
+- Website có URL online và mục tiêu branded URL `agent-email.10x-lifeos.com`.
 - Người mới có thể hiểu Problem → Destination → Roadmap trong ≤3 phút.
 - Người mới biết next action trong ≤5 phút.
 - Workflow `Public Agent` được định nghĩa và tái sử dụng được.
